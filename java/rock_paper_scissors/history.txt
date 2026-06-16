@@ -1,0 +1,11 @@
+You Selected ->Paper ,Opponent Selected->Scissors ,Result is ->You Lose
+You Selected ->Scissors ,Opponent Selected->Rock ,Result is ->You Lose
+You Selected ->Paper ,Opponent Selected->Scissors ,Result is ->You Lose
+You Selected ->Rock ,Opponent Selected->Scissors ,Result is ->You Win
+You Selected ->Rock ,Opponent Selected->Scissors ,Result is ->You Win
+You Selected ->Rock ,Opponent Selected->Rock ,Result is ->Match Draw
+You Selected ->Scissors ,Opponent Selected->Scissors ,Result is ->Match Draw
+You Selected ->Paper ,Opponent Selected->Rock ,Result is ->You Win
+You Selected ->Rock ,Opponent Selected->Scissors ,Result is ->You Win
+You Selected ->Scissors ,Opponent Selected->Rock ,Result is ->You Lose
+You Selected ->Paper ,Opponent Selected->Scissors ,Result is ->You Lose
