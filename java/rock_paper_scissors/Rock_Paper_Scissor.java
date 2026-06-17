@@ -11,6 +11,20 @@ class RPS {
 
     private static String[] inputs = { "Rock", "Scissors", "Paper" };
 
+    protected void validateUserInput(int userInput) throws Exception {
+
+        if (userInput != 0 && userInput != 1 && userInput != 2 && userInput != 3) {
+            throw new Exception("Received invalid input, please restart to play again");
+        }
+    }
+
+    protected void validateCompInput(int compInput) throws Exception {
+
+        if (compInput != 0 && compInput != 1 && compInput != 2) {
+            throw new Exception("System Error, please restart to play again");
+        }
+    }
+
     public void playGame() {
         Scanner sc = new Scanner(System.in);
         Random rd = new Random();
@@ -20,17 +34,26 @@ class RPS {
                 System.out.println("Press 0 for Rock,1 for Scissors and 2 for Paper and 3 for history :-");
                 int userInput = sc.nextInt();
                 if (userInput == 3) {
-                    getHistoryData();
+                    String data = getHistoryData();
+                    if (data == null) {
+                        System.out.println("No History Found");
+                    } else {
+                        System.out.println(data);
+                    }
                     return;
                 }
-                if (userInput != 0 && userInput != 1 && userInput != 2) {
-                    throw new Exception("Received invalid input, please restart to play again");
+                try {
+                    validateUserInput(userInput);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
                 }
 
                 int compInput = rd.nextInt(inputs.length - 1);
 
-                if (compInput != 0 && compInput != 1 && compInput != 2) {
-                    throw new Exception("System error, please restart or try again later");
+                try {
+                    validateCompInput(compInput);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
                 }
                 String userSelection = inputs[userInput];
                 System.out.println("You selected -> " + userSelection);
@@ -44,8 +67,9 @@ class RPS {
             } catch (Exception ex) {
                 if (ex.getMessage() == null) {
                     System.out.println("Input Error Occured");
-                } else
+                } else {
                     System.out.println(ex.getMessage());
+                }
             }
         } while (input == 'Y');
 
@@ -53,7 +77,7 @@ class RPS {
 
     }
 
-    private String calculateResult(int userInput, int compInput) {
+    protected String calculateResult(int userInput, int compInput) {
 
         if ((userInput == 0 && compInput == 1) || (userInput == 1 && compInput == 2)
                 || (userInput == 2 && compInput == 0)) {
@@ -69,7 +93,7 @@ class RPS {
 
     }
 
-    private void writeResults(String userSelection, String compSelection, String result) {
+    protected boolean writeResults(String userSelection, String compSelection, String result) {
         try {
             File file = FileUtils.getFile("src/main/java/fst/rock_paper_scissors/history.txt");
             if (!file.exists()) {
@@ -86,25 +110,29 @@ class RPS {
                                 + " ,Result is ->" + result + "\n",
                         Charset.defaultCharset());
             }
+            return true;
 
         } catch (Exception ex) {
             System.out.println("Got some error while saving the results (" + ex.getMessage() + ")");
         }
+
+        return false;
     }
 
-    private void getHistoryData() {
+    protected String getHistoryData() {
         try {
             File file = FileUtils.getFile("src/main/java/fst/rock_paper_scissors/history.txt");
             if (!file.exists()) {
                 throw new Exception("No history found");
             } else {
                 String data = FileUtils.readFileToString(file, Charset.defaultCharset());
-                System.out.println(data);
+                return data;
             }
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+        return null;
 
     }
 }
