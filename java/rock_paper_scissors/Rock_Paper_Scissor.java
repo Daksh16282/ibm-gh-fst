@@ -13,7 +13,7 @@ class RPS {
 
     protected void validateUserInput(int userInput) throws Exception {
 
-        if (userInput != 0 && userInput != 1 && userInput != 2 && userInput != 3) {
+        if ((userInput != 0 && userInput != 1 && userInput != 2 && userInput != 3)) {
             throw new Exception("Received invalid input, please restart to play again");
         }
     }
@@ -33,6 +33,7 @@ class RPS {
             try {
                 System.out.println("Press 0 for Rock,1 for Scissors and 2 for Paper and 3 for history :-");
                 int userInput = sc.nextInt();
+
                 if (userInput == 3) {
                     String data = getHistoryData();
                     if (data == null) {
@@ -48,7 +49,7 @@ class RPS {
                     System.out.println(ex.getMessage());
                 }
 
-                int compInput = rd.nextInt(inputs.length - 1);
+                int compInput = rd.nextInt(inputs.length);
 
                 try {
                     validateCompInput(compInput);
@@ -70,6 +71,11 @@ class RPS {
                 } else {
                     System.out.println(ex.getMessage());
                 }
+                // to clear the old buffered input string from console,else program keeps
+                // reading the
+                // old input ,throw exception again and this process continues resulting
+                // infinite loop
+                sc.nextLine();
             }
         } while (input == 'Y');
 
