@@ -47,6 +47,7 @@ class RPS {
                     validateUserInput(userInput);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
+                    return;
                 }
 
                 int compInput = rd.nextInt(inputs.length);
@@ -55,6 +56,7 @@ class RPS {
                     validateCompInput(compInput);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
+                    return;
                 }
                 String userSelection = inputs[userInput];
                 System.out.println("You selected -> " + userSelection);
