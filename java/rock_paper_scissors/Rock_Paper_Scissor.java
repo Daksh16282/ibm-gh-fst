@@ -76,6 +76,8 @@ class RPS {
                 // old input ,throw exception again and this process continues resulting
                 // infinite loop
                 sc.nextLine();
+                //Halt Program 
+                return;
             }
         } while (input == 'Y');
 
