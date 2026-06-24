@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ActivitySuite">
+    <test name = "ActivityTests">
+    <groups>
+        <run>
+            <include name = "ABC"/>
+        </run>
+    </groups>
+        <classes>
+        <!-- Classes without run will be skipped even if mentioned there -->
+            <class name ="TestNG.Activity3_Test" />
+            <class name ="TestNG.Activity4_Test" />
+            <class name ="TestNG.Group_Test" />
+            <class name = "TestNG.Activity1_Test">
+                <methods>
+                    <exclude name = "testBAboutUsitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
