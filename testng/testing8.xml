@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!-- Without Parallel -> 29.565 sec
+With Parallel ->18.100 sec  -->
+<suite name="ActivitySuite" parallel = "classes">
+    <test name = "ActivityTests">
+        <classes>
+        <!-- Classes without run will be skipped even if mentioned there -->
+            <class name ="TestNG.Activity3_Test" />
+            <class name ="TestNG.Activity4_Test" />
+            <class name ="TestNG.Group_Test" />
+            <class name = "TestNG.Activity1_Test"/>
+        </classes>
+    </test>
+</suite>
