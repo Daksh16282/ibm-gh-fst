@@ -25,7 +25,7 @@ public class GitProject {
     public void setUp() {
         // Set Auth Header
         request = new RequestSpecBuilder().setContentType(ContentType.JSON)
-                .addHeader("Authorization", "token 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 ")
+                .addHeader("Authorization", "token ghp_rZuH4PqcXsIiRZeXp70JuKy80BRqnu4RJKS9 ")
                 .setBaseUri("https://api.github.com").build();
     }
 
