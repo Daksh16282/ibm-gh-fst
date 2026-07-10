@@ -1,0 +1,216 @@
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 0080000000004TD
+Task Name: Activity2
+Task Type: MTT_TEST
+Task Id: 013BGZ0Z000000000003
+Run Id: 2
+Service Id: 2371899
+Started By: mefowa9756@dysonc.com
+Run Context Type: ICS_UI
+07/10/2026 05:34:57 **** Importing Connection: Conn_013BGZ0B000000000002 ...
+07/10/2026 05:34:57 **** Importing Source Definition: PHONES ...
+07/10/2026 05:34:57 **** Importing Target Definition: fstm1db_DV_Sony_Phones ...
+07/10/2026 05:34:57 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  PHONES...
+    Validating Target Definition  fstm1db_DV_Sony_Phones...
+07/10/2026 05:34:57 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+07/10/2026 05:34:57 **** Importing Workflow: wf_mtt_013BGZ0Z000000000003 ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_013BGZ0Z000000000003 > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_013BGZ0Z000000000003].  Starting repository sequence id is [530960914]
+DIRECTOR> VAR_27085 [2026-07-10 05:34:57.682] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/parameters/s_mtt_013BGZ0Z000000000003.param] is opened for [session [wf_mtt_013BGZ0Z000000000003.s_mtt_013BGZ0Z000000000003]].
+DIRECTOR> VAR_27062 [2026-07-10 05:34:57.682] Warning! Cannot find section for worklet [wf_mtt_013BGZ0Z000000000003] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/parameters/s_mtt_013BGZ0Z000000000003.param].
+DIRECTOR> TM_6014 [2026-07-10 05:34:57.682] Initializing session [s_mtt_013BGZ0Z000000000003] at [Fri Jul 10 05:34:57 2026].
+DIRECTOR> TM_6683 [2026-07-10 05:34:57.682] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2026-07-10 05:34:57.682] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2026-07-10 05:34:57.682] Folder: []
+DIRECTOR> TM_6685 [2026-07-10 05:34:57.682] Workflow: [wf_mtt_013BGZ0Z000000000003] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2026-07-10 05:34:57.682] Operating System Type [Linux]
+DIRECTOR> TM_6101 [2026-07-10 05:34:57.682] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2026-07-10 05:34:57.683] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2026-07-10 05:34:57.683] Session [s_mtt_013BGZ0Z000000000003] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0320].
+MANAGER> PETL_24091 [2026-07-10 05:34:57.695] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2026-07-10 05:34:57.696] Running Partition Group [1].
+MANAGER> PETL_24000 [2026-07-10 05:34:57.696] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2026-07-10 05:34:57.696] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2026-07-10 05:34:57.696] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2026-07-10 05:34:57.696] Initializing session run.
+MAPPING> PETL_24091 [2026-07-10 05:34:57.696] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2026-07-10 05:34:57.698] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2026-07-10 05:34:57.698] Server Code page: [UTF-8 encoding of Unicode]
+MAPPING> TM_6151 [2026-07-10 05:34:57.698] The session sort order is [Binary].
+MAPPING> TM_6185 [2026-07-10 05:34:57.698] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65110 [2026-07-10 05:34:57.698] Current Timezone:[UTC -5:0]
+MAPPING> CMN_65111 [2026-07-10 05:34:57.698] Current Process ID:[286757]
+MAPPING> TM_6155 [2026-07-10 05:34:57.698] Using HIGH precision processing.
+MAPPING> TM_6180 [2026-07-10 05:34:57.698] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2026-07-10 05:34:57.698] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2026-07-10 05:34:57.698] DTM error log disabled. 
+MAPPING> TE_7022 [2026-07-10 05:34:57.698] TShmWriter: Initialized
+MAPPING> DBG_21694 [2026-07-10 05:34:57.700] Rank Partition [0]: Index cache size = [1000000], Data cache size = [2000000]
+MAPPING> TE_7212 [2026-07-10 05:34:57.700] Increasing [Index Cache] size for transformation [Rank] from [1000000] to [1049760].
+MAPPING> TE_7212 [2026-07-10 05:34:57.700] Increasing [Data Cache] size for transformation [Rank] from [2000000] to [2098296].
+MAPPING> TE_7029 [2026-07-10 05:34:57.700] Aggregate Information: Creating New Index and Data Files
+MAPPING> TE_7034 [2026-07-10 05:34:57.700] Aggregate Information: Index file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/cache/PMAGG530960946_5_0_286757.idx]
+MAPPING> TE_7035 [2026-07-10 05:34:57.700] Aggregate Information: Data file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/cache/PMAGG530960946_5_0_286757.dat]
+MAPPING> TM_6007 [2026-07-10 05:34:57.701] DTM initialized successfully for session [s_mtt_013BGZ0Z000000000003]
+DIRECTOR> PETL_24033 [2026-07-10 05:34:57.707] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2026-07-10 05:34:57.707] Starting pre-session tasks. : (Fri Jul 10 05:34:57 2026)
+PRE-SESS> PETL_24091 [2026-07-10 05:34:57.708] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2026-07-10 05:34:57.709] Pre-session task completed successfully. : (Fri Jul 10 05:34:57 2026)
+DIRECTOR> PETL_24006 [2026-07-10 05:34:57.709] Starting data movement.
+MAPPING> TM_6660 [2026-07-10 05:34:57.710] Total Buffer Pool size is 3987040 bytes and Block size is 219280 bytes.
+READER_1_1_1> PETL_24091 [2026-07-10 05:34:57.711] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> DBG_21438 [2026-07-10 05:34:57.712] Reader: Source is [odbc://dbtype=Oracle;host=0.tcp.ap.ngrok.io;port=24102;database=xepdb1], Type [ODBC], User [fstm1db]
+READER_1_1_1> BLKR_16051 [2026-07-10 05:34:57.716] Source database connection [Conn_013BGZ0B000000000002] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2026-07-10 05:34:57.716] Database driver event...
+CMN_1021 [Driver Manager used is [Data Direct].]
+
+READER_1_1_1> CMN_1021 [2026-07-10 05:35:00.984] Database driver event...
+CMN_1021 [Reading driver properties from : /data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/76.0.1.1/ICS/main/bin/rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=0.tcp.ap.ngrok.io;ServiceName=xepdb1;Port=24102;UID=fstm1db;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [fstm1db]
+ODBC Version:	03.52.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	21.00.0000 Oracle 21.0.0.0.0
+.
+Driver Name:	DWora28.so
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+READER_1_1_1> BLKR_16003 [2026-07-10 05:35:00.984] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2026-07-10 05:35:00.985] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2026-07-10 05:35:00.986] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> WRT_8147 [2026-07-10 05:35:00.986] Writer: Target is Database [odbc://dbtype=Oracle;host=0.tcp.ap.ngrok.io;port=24102;database=xepdb1], Type [ODBC], User [fstm1db], Bulk Mode [OFF]
+WRITER_1_*_1> CMN_1021 [2026-07-10 05:35:00.986] Database driver event...
+CMN_1021 [Driver Manager used is [Data Direct].]
+
+WRITER_1_*_1> CMN_1021 [2026-07-10 05:35:04.160] Database driver event...
+CMN_1021 [Reading driver properties from : /data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/76.0.1.1/ICS/main/bin/rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=0.tcp.ap.ngrok.io;ServiceName=xepdb1;Port=24102;UID=fstm1db;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [fstm1db]
+ODBC Version:	03.52.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	21.00.0000 Oracle 21.0.0.0.0
+.
+Driver Name:	DWora28.so
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+WRITER_1_*_1> WRT_8221 [2026-07-10 05:35:04.160] Target database connection [Conn_013BGZ0B000000000002] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8461 [2026-07-10 05:35:04.160] The value of flag DTMDisablePartialEORStagingSupport is  [0].
+WRITER_1_*_1> WRT_8124 [2026-07-10 05:35:04.161] Target Table DV_Sony_Phones :SQL INSERT statement:
+INSERT INTO fstm1db.DV_Sony_Phones(RANKINDEX,PROD_ID,PROD_NAME,PROD_DESC,PROD_PRICE)  VALUES ( ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2026-07-10 05:35:04.161] No column marked as primary key for table [DV_Sony_Phones]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2026-07-10 05:35:04.161] Target connection group #1 consists of target(s) [DV_Sony_Phones]
+WRITER_1_*_1> WRT_8003 [2026-07-10 05:35:04.161] Writer initialization complete.
+WRITER_1_*_1> WRT_8005 [2026-07-10 05:35:04.162] Writer run started.
+READER_1_1_1> BLKR_16007 [2026-07-10 05:35:04.162] Reader run started.
+WRITER_1_*_1> WRT_8158 [2026-07-10 05:35:04.162] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Fri Jul 10 05:35:03 2026
+
+Target tables:
+
+     DV_Sony_Phones
+
+
+READER_1_1_1> RR_4010 [2026-07-10 05:35:04.162] SQ instance [Source] SQL Query [SELECT FSTM1DB.PHONES.PROD_ID, FSTM1DB.PHONES.PROD_NAME, FSTM1DB.PHONES.PROD_DESC, FSTM1DB.PHONES.PROD_PRICE FROM FSTM1DB.PHONES]
+READER_1_1_1> RR_4049 [2026-07-10 05:35:04.162] SQL Query issued to database : (Fri Jul 10 05:35:04 2026)
+READER_1_1_1> RR_4050 [2026-07-10 05:35:04.626] First row returned from database to reader : (Fri Jul 10 05:35:04 2026)
+READER_1_1_1> BLKR_16019 [2026-07-10 05:35:04.626] Read [100] rows, read [0] error rows for source table [PHONES] instance name [PHONES]
+READER_1_1_1> BLKR_16008 [2026-07-10 05:35:04.626] Reader run completed.
+TRANSF_1_1_1> TE_7032 [2026-07-10 05:35:04.633] The B-Tree being managed in files
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/cache/PMAGG530960946_5_0_286757.dat for Data and
+
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/cache/PMAGG530960946_5_0_286757.idx for Index has:
+	Index Size:	1
+	Row Size:	10864
+	Order:		100
+	Minimum Order:	50
+	Height:		1
+	Entries:	1
+	IndexPageSize:	1296
+	IndexPages:	810
+	DataPageSize:	10872
+	DataPages:	193
+
+TRANSF_1_1_1> DBG_21216 [2026-07-10 05:35:04.633] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2026-07-10 05:35:04.633] Start loading table [DV_Sony_Phones] at: Fri Jul 10 05:35:03 2026
+WRITER_1_*_1> WRT_8168 [2026-07-10 05:35:06.644] End loading table [DV_Sony_Phones] at: Fri Jul 10 05:35:06 2026
+WRITER_1_*_1> WRT_8141 [2026-07-10 05:35:06.829] 
+Commit on end-of-data  Fri Jul 10 05:35:06 2026
+===================================================
+
+WRT_8036 Target: DV_Sony_Phones (Instance Name: [fstm1db_DV_Sony_Phones])
+WRT_8038 Inserted rows - Requested: 10         Applied: 10         Rejected: 0          Affected: 10        
+
+WRITER_1_*_1> WRT_8035 [2026-07-10 05:35:06.829] Load complete time: Fri Jul 10 05:35:06 2026
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: DV_Sony_Phones (Instance Name: [fstm1db_DV_Sony_Phones])
+WRT_8038 Inserted rows - Requested: 10         Applied: 10         Rejected: 0          Affected: 10        
+
+
+WRITER_1_*_1> WRT_8043 [2026-07-10 05:35:06.829] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2026-07-10 05:35:07.014] Writer run completed.
+MANAGER> PETL_24031 [2026-07-10 05:35:07.015] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed.
+	Total Run Time = [0.649726] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [fstm1db_DV_Sony_Phones] has completed.
+	Total Run Time = [2.381271] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MAPPING> CMN_1791 [2026-07-10 05:35:07.015] The index cache size that would hold [1] aggregate groups of input rows for [Rank], in memory, is [1296] bytes
+MAPPING> CMN_1790 [2026-07-10 05:35:07.015] The data cache size that would hold [1] aggregate groups of input rows for [Rank], in memory, is [10872] bytes
+MANAGER> PETL_24005 [2026-07-10 05:35:07.016] Starting post-session tasks. : (Fri Jul 10 05:35:07 2026)
+POST-SESS> PETL_24091 [2026-07-10 05:35:07.016] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2026-07-10 05:35:07.016] Post-session task completed successfully. : (Fri Jul 10 05:35:07 2026)
+MAPPING> TM_6018 [2026-07-10 05:35:07.017] The session completed with [0] row transformation errors. 
+MANAGER> TE_7216 [2026-07-10 05:35:07.017] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/cache/PMAGG530960946_5_0_286757.idx] for transformation [Rank].
+MANAGER> TE_7216 [2026-07-10 05:35:07.017] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/013BGZ0E00000000005N/013BGZ/cache/PMAGG530960946_5_0_286757.dat] for transformation [Rank].
+MANAGER> PETL_24002 [2026-07-10 05:35:07.166] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2026-07-10 05:35:07.166] Session run completed successfully.
+DIRECTOR> TM_6022 [2026-07-10 05:35:07.166] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2026-07-10 05:35:07.166] Source Load Summary.
+DIRECTOR> CMN_1740 [2026-07-10 05:35:07.166] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [100], Affected Rows [100], Applied Rows [100], Rejected Rows [0]
+DIRECTOR> TM_6253 [2026-07-10 05:35:07.167] Target Load Summary.
+DIRECTOR> CMN_1740 [2026-07-10 05:35:07.167] Table: [fstm1db_DV_Sony_Phones] (Instance Name: [fstm1db_DV_Sony_Phones] Instance UI Name: [Target])
+	 Output Rows [10], Affected Rows [10], Applied Rows [10], Rejected Rows [0]
+DIRECTOR> TM_6023 [2026-07-10 05:35:07.167] 
+===================================================
+
+DIRECTOR> TM_6020 [2026-07-10 05:35:07.167] Session [s_mtt_013BGZ0Z000000000003] completed at [Fri Jul 10 05:35:07 2026].
